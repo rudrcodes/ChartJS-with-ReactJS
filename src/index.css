@@ -23,10 +23,12 @@ a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
+  transition: all 400ms ease-in-out;
 }
 
 a:hover {
-  color: #535bf2;
+  color: #f3ebeba9;
+  /* color: #535bf2; */
 }
 
 body {

@@ -4,9 +4,9 @@ import { useState } from "react";
 import { Chart as ChartJS } from "chart.js/auto";
 export const BarChart = ({ data }) => {
   useEffect(() => {
-    data.map((el) => {
-      console.log(el);
-    });
+    // data.map((el) => {
+    // console.log(el);
+    // });
   }, [data]);
   const labels = ["Easy", "Medium", "Hard"];
   const ChartData = {
@@ -14,8 +14,8 @@ export const BarChart = ({ data }) => {
     datasets: [
       {
         label: "Chart value",
-        backgroundColor: ["#f3ba2f", "rgba(75,192,192,1)", "#2a71d0"],
-        borderColor: "#f7efef",
+        backgroundColor: ["#f32f2f", "#874bc0", "#17f55a"],
+        borderColor: "#8d8989",
         borderWidth: 5,
         data: data.map((el) => {
           return el;
@@ -32,10 +32,9 @@ export const BarChart = ({ data }) => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          //   backgroundColor: "#beb9b9",
+          // backgroundColor: "#ffffff11",
         }}
       >
-        {/* <Bar options={options} data={data} />; */}
         <Bar data={ChartData} />
       </div>
     </div>
